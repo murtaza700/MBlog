@@ -17,7 +17,7 @@ const About = () => {
           <p>Over the years, I've honed my skills in modern technologies like Next.js, React, and Tailwind CSS. I believe that a great website is not just about writing clean code, but also about creating an intuitive and enjoyable experience for the end-user. My goal is to bridge the gap between complex technical challenges and elegant user-centric design.</p>
         </div>
         <div className="right">
-          <Image src={'/profile.png'} alt='murtaza profile picture' width={350} height={350} />
+          <Image src={'/Profile.png'} alt='murtaza profile picture' width={350} height={350} />
         </div>
       </div>
       <div className="believe">
@@ -57,4 +57,5 @@ export default About
 export const metadata = {
   title: "About | Blogs by Murtaza",
   description: "Learn more about our mission to share the best Dev.to blogs and coding resources. We make it simple to explore programming knowledge in one place.",
+
 };
