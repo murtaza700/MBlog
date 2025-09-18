@@ -1,0 +1,221 @@
+.about>.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 50px 0px;
+}
+
+.about>.top>h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.about>.top>p {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.about>.journey {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 50px;
+}
+
+.journey>.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.journey>.left>h1 {
+    color: var(--bg);
+    font-size: 35px;
+}
+
+.journey>.left>p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.journey>.right>img {
+    border-radius: 50%;
+}
+
+.believe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 10px;
+}
+
+.believe>h1 {
+    color: var(--bg);
+    font-size: 35px;
+}
+
+.believe>p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bcards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bcards>.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(247, 249, 250);
+}
+
+.card>h3 {
+    color: var(--bg);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card>p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+}
+
+.bcards>.card>.icon {
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.touch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 60px 10px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.touch>a>button {
+    color: var(--bg);
+    background: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+
+.touch>a>button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width:768px) {
+    .about>.top>h1 {
+        font-size: 32px;
+    }
+
+    .about>.top>p {
+        font-size: 15px;
+        padding: 0px 25px;
+    }
+
+    .journey>.left {
+        width: auto;
+    }
+
+    .journey {
+        gap: 20px;
+    }
+
+    .journey>.left>h1 {
+        font-size: 25px;
+    }
+
+    .journey>.left>p {
+        font-size: 14px;
+    }
+
+    .about>.journey {
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .journey>.right>img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .believe>.bcards {
+        flex-direction: column;
+    }
+
+    .bcards>.card {
+        max-width: 280px;
+    }
+
+    .card>h3 {
+        font-size: 18px;
+    }
+
+    .card>p {
+        font-size: 14px;
+    }
+
+    .believe>h1 {
+        font-size: 25px;
+    }
+
+    .believe>p {
+        font-size: 15px;
+        padding: 0px 5%;
+    }
+
+    .bcards>.card>.icon {
+        height: 40px;
+        width: 40px;
+        padding: 8px;
+    }
+
+    .touch>h1 {
+        font-size: 25px;
+    }
+
+    .touch>p {
+        font-size: 15px;
+    }
+
+    .touch>a>button {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+}

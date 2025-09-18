@@ -1,0 +1,225 @@
+.contact {
+    padding: 50px 5%;
+    background-color: rgb(242, 243, 245);
+}
+
+.contact>.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.contact>.top>h1 {
+    color: var(--bg);
+    font-size: 45px;
+}
+
+.contact>.top>p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 17px;
+}
+
+.contact>.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact>.center>.l,
+.contact>.center>.r {
+    background-color: var(--text);
+    padding: 40px;
+    width: 50%;
+    min-height: 560px;
+    border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--bg);
+}
+
+.iconscontact {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.iconscontact .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.iconscontact p,
+.iconscontact span {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.iconscontact>div {
+    display: flex;
+    gap: 10px;
+}
+
+.l>h2 {
+    font-size: 30px;
+}
+
+.l>p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 20px 0px;
+}
+
+.iconscontact>div>.icon>svg {
+    fill: var(--bg);
+}
+
+.r {
+    position: relative;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+form input:focus {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.r>form>h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.name>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>.mail {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+form>.msg {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+form textarea:focus {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.r>button {
+    color: var(--text);
+    background: var(--bg);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.map {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .contact>.center {
+        flex-direction: column;
+    }
+
+    .contact>.center>.l {
+        padding: 15px;
+    }
+
+    .contact>.center>.l,
+    .contact>.center>.r {
+        width: 100%;
+    }
+
+    .iconscontact>div {
+        gap: 0px;
+    }
+
+    .contact>.top>h1 {
+        font-size: 30px;
+    }
+
+    .contact>.top>p {
+        font-size: 15px;
+    }
+
+    .l>h2 {
+        font-size: 25px;
+    }
+
+    .l>p {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .iconscontact p,
+    .iconscontact span {
+        font-size: 15px;
+    }
+
+    .r>form>h2 {
+        font-size: 25px;
+    }
+
+    .name {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .contact>.center>.r {
+       height: 650px;
+    }
+}
