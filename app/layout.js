@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -21,7 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+  <Script src="https://analytics.ahrefs.com/analytics.js" data-key="vjK2pDaxIWl1JKx+tgd83A" async strategy="afterInteractive" />
         <Navbar />
         {children}
         <Footer />
